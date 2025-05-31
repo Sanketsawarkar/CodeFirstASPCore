@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|c:\\users\\dell\\source\\repos\\crudwithoutdatabase\\crudwithoutdatabase\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|solutionrelative:crudwithoutdatabase\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|c:\\users\\dell\\source\\repos\\crudwithoutdatabase\\crudwithoutdatabase\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|solutionrelative:crudwithoutdatabase\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|c:\\users\\dell\\source\\repos\\crudwithoutdatabase\\crudwithoutdatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|solutionrelative:crudwithoutdatabase\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|c:\\users\\dell\\source\\repos\\crudwithoutdatabase\\crudwithoutdatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0B0B83-E758-49CE-8D94-715DD51E4137}|CrudWithoutDataBase\\CrudWithoutDataBase.csproj|solutionrelative:crudwithoutdatabase\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CrudWithoutDataBase\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CrudWithoutDataBase\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-31T07:21:59.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Program.cs",
+              "RelativeDocumentMoniker": "CrudWithoutDataBase\\Program.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Program.cs",
+              "RelativeToolTip": "CrudWithoutDataBase\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T07:06:15.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "CrudWithoutDataBase\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Models\\Employee.cs",
+              "RelativeToolTip": "CrudWithoutDataBase\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:27:54.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CrudWithoutDataBase\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudWithoutDataBase\\CrudWithoutDataBase\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CrudWithoutDataBase\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAwB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T20:22:17.446Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
