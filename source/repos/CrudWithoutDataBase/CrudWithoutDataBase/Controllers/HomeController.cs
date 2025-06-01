@@ -93,9 +93,10 @@ public class HomeController : Controller
     public IActionResult DeleteConfirmed(int? id)
     {
         var employee = employees.FirstOrDefault(e => e.Id == id);
-        if (employee != null) return NotFound();
+        if (employee != null) return NotFound(){
        
             employees.Remove(employee);
+            }
 
         return RedirectToAction("Index");
     }
