@@ -1,67 +1,107 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using CodeFirstASPCore.Models;
+using CrudCodeFirstEF.Models;
 
-namespace CodeFirstASPCore.Controllers;
+namespace CrudCodeFirstEF.Controllers;
 
 public class HomeController : Controller
 {
 
 
     //private readonly ILogger<HomeController> _logger;
-
     //public HomeController(ILogger<HomeController> logger)
-    //{
+    //{ 
     //    _logger = logger;
     //}
-    private readonly StudentDBContext studentDB;
-
-    public HomeController(StudentDBContext studentDB)
+    private readonly EmployeeDBContext employeeDB;
+    public HomeController(EmployeeDBContext employeeDB)
     {
-        this.studentDB = studentDB;
+        this.employeeDB = employeeDB;
     }
-
     
     public IActionResult Index()
     {
-        var stddata =  studentDB.Students.ToList();
-        return View(stddata);
+        var employee=employeeDB.Employees.ToList();
+        return View(employee);
     }
 
-    [HttpGet] // This is needed to load the form
     public IActionResult Create()
     {
+   
         return View();
     }
 
     [HttpPost]
-    public IActionResult Create(Student std)
+    public IActionResult Create(Employee emp)
     {
         if (ModelState.IsValid)
         {
-            studentDB.Students.Add(std);
-            studentDB.SaveChanges();
-           // TempData["insert_success"] = "Inserted";
-            return RedirectToAction("Index","Home");
+            employeeDB.Employees.Add(emp);
+            employeeDB.SaveChanges();
+            return RedirectToAction("Index");
         }
-        return View(std);
+
+        return View(emp);
     }
 
     public IActionResult Details(int? id)
     {
-        if(id == null || studentDB.Students == null)
+        if(id==null || employeeDB.Employees == null)
         {
             return NotFound();
         }
-        var stdData = studentDB.Students.FirstOrDefault(x => x.Id == id);
-        return View(stdData);
+        var employee=employeeDB.Employees.FirstOrDefault(x=> x.Id == id);
+        employeeDB.SaveChanges();
+        return View(employee);
     }
 
-    public IActionResult Edit(int id)
+    public IActionResult Edit(int? id)
     {
-        var stddata = studentDB.Students.Find(id);
-        return View(stddata);
+        if(id ==null || employeeDB.Employees == null)
+        {
+            return NotFound();
+        }
+        var employee= employeeDB.Employees.Find(id);
+        return View(employee);
     }
+
+    [HttpPost]
+    public IActionResult Edit(int? id,Employee emp)
+    {
+        if (id == null || employeeDB.Employees == null)
+        {
+            return NotFound();
+        }
+        if (ModelState.IsValid)
+        {
+            employeeDB.Employees.Update(emp);
+            employeeDB.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View(emp);
+    }
+
+
+    public IActionResult Delete(int? id)
+    {
+       
+        var emp= employeeDB.Employees.FirstOrDefault(x=> x.Id == id);
+        return View(emp);
+    }
+
+    [HttpPost,ActionName("Delete")]
+    public IActionResult DeleteConformed(int? id)
+    {
+        var empData = employeeDB.Employees.Find(id);
+        if (empData != null)
+        {
+           employeeDB.Employees.Remove(empData);
+        }
+        employeeDB.SaveChanges();
+        return RedirectToAction("Index");
+    }
+
+
 
     public IActionResult Privacy()
     {
